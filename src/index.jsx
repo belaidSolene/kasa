@@ -6,7 +6,7 @@ import Root from './pages/Root'
 import Home from './pages/Home'
 import About from './pages/About'
 import Rental from './pages/Rental'
-import Error from './components/Error'
+import Error from './pages/Error'
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +26,7 @@ const router = createBrowserRouter([
 				path: 'rental/:idRental',
 				element: <Rental />,
 			},
+			{},
 		],
 	},
 ])

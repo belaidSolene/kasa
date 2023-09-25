@@ -1,3 +1,10 @@
+import logo from '../../assets/logos/logo-footer.svg'
+
 export default function Footer() {
-	return <div>Ceci sera le futur footer</div>
+	return (
+		<footer>
+			<img src={logo} alt='kasa' />
+			<p>© 2023 Kasa. All rights reserved</p>
+		</footer>
+	)
 }
