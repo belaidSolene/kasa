@@ -1,10 +1,24 @@
-import logo from '../../assets/logos/logo-footer.svg'
+import { ReactComponent as Logo } from '../../assets/logos/logo-footer.svg'
+import styled from 'styled-components'
+
+import { colors } from '../../utils/style/colors'
+
+const FooterContainer = styled.footer`
+	background-color: ${colors.black};
+	color: ${colors.white};
+	text-align: center;
+	padding: 6.3rem;
+`
+
+const Copyright = styled.p`
+	padding-top: 1rem;
+`
 
 export default function Footer() {
 	return (
-		<footer>
-			<img src={logo} alt='kasa' />
-			<p>© 2023 Kasa. All rights reserved</p>
-		</footer>
+		<FooterContainer>
+			<Logo />
+			<Copyright>© 2023 Kasa. All rights reserved</Copyright>
+		</FooterContainer>
 	)
 }

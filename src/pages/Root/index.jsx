@@ -8,9 +8,9 @@ export default function Root() {
 		<div>
 			<Header />
 
-			<div>
+			<section>
 				<Outlet />
-			</div>
+			</section>
 
 			<Footer />
 		</div>
