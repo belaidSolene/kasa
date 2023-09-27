@@ -1,8 +1,21 @@
+import { aboutDatas } from '../../datas/about'
+import bannerAbout from '../../assets/banners/bannerAbout.png'
+
+import Banner from '../../components/Banner'
+
 function About() {
 	return (
-		<div>
-			<h1>A propos de Kasa</h1>
-		</div>
+		<section>
+			<Banner img={bannerAbout} />
+
+			{aboutDatas.map((data, i) => {
+				return (
+					<div key={`${data.title}-${i}`}>
+						{data.title},<p>{data.description}</p>
+					</div>
+				)
+			})}
+		</section>
 	)
 }
 

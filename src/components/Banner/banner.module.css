@@ -1,0 +1,21 @@
+.banner{
+    height: 223px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.banner > img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    background: black; 
+    mix-blend-mode: darken; 
+    opacity: 0.30; 
+}
+
+h1{
+    font-size: 48px;
+    color: white;
+}

@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
 import logo from '../../assets/logos/logo-header.svg'
-import styles from './header.module.css'
+import style from './header.module.css'
 
 export default function Header() {
 	return (
-		<header className={styles.header}>
+		<header className={style.header}>
 			<img src={logo} alt='kasa' />
 			<nav>
 				<NavLink to='/'>
@@ -13,7 +13,7 @@ export default function Header() {
 						<span
 							className={
 								isActive
-									? styles.active
+									? style.active
 									: ''
 							}
 						>
@@ -27,7 +27,7 @@ export default function Header() {
 						<span
 							className={
 								isActive
-									? styles.active
+									? style.active
 									: ''
 							}
 						>

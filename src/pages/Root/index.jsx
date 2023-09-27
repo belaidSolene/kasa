@@ -10,9 +10,7 @@ export default function Root() {
 		<div id={style.container}>
 			<Header />
 
-			<section>
-				<Outlet />
-			</section>
+			<Outlet />
 
 			<Footer />
 		</div>
