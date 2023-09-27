@@ -1,25 +1,20 @@
 import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
 
-import { colors } from '../../utils/style/colors'
 import logo from '../../assets/logos/logo-header.svg'
-
-const HeaderContainer = styled.header`
-	display: flex;
-	justify-content: space-between;
-	color: ${colors.primary};
-`
+import styles from './header.module.css'
 
 export default function Header() {
 	return (
-		<HeaderContainer>
+		<header className={styles.header}>
 			<img src={logo} alt='kasa' />
 			<nav>
 				<NavLink to='/'>
-					{({ isActive, isPending }) => (
+					{({ isActive }) => (
 						<span
 							className={
-								isActive ? 'active' : ''
+								isActive
+									? styles.active
+									: ''
 							}
 						>
 							Accueil
@@ -28,17 +23,19 @@ export default function Header() {
 				</NavLink>
 
 				<NavLink to='about'>
-					{({ isActive, isPending }) => (
+					{({ isActive }) => (
 						<span
 							className={
-								isActive ? 'active' : ''
+								isActive
+									? styles.active
+									: ''
 							}
 						>
-							A propos
+							A Propos
 						</span>
 					)}
 				</NavLink>
 			</nav>
-		</HeaderContainer>
+		</header>
 	)
 }
