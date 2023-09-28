@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import logo from '../../assets/logos/logo-header.svg'
 import style from './header.module.css'
@@ -6,7 +6,9 @@ import style from './header.module.css'
 export default function Header() {
 	return (
 		<header className={style.header}>
-			<img src={logo} alt='kasa' />
+			<Link to={'/'}>
+				<img src={logo} alt='kasa' />
+			</Link>
 			<nav>
 				<NavLink to='/'>
 					{({ isActive }) => (

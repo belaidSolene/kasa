@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom'
 
-function Rental() {
+export default function Rental() {
 	const { idRental } = useParams()
+	console.log(idRental)
 
 	return (
 		<div>
@@ -9,5 +10,3 @@ function Rental() {
 		</div>
 	)
 }
-
-export default Rental
