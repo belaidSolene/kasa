@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom'
+import style from './card.module.css'
 
 export default function Card({ id, title, picture }) {
 	return (
 		<Link to={`rental/${id}`}>
-			<article>
-				<img src={picture} alt={title} />
-				<h2>{title}</h2>
+			<article className={style.card}>
+				<img
+					className={style.picture}
+					src={picture}
+					alt={title}
+				/>
+				<h2 className={style.title}>{title}</h2>
 			</article>
 		</Link>
 	)

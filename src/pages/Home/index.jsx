@@ -4,6 +4,7 @@ import bannerHome from '../../assets/banners/bannerHome.png'
 
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
+import style from './home.module.css'
 
 export default function Home() {
 	const titleHome = 'Chez vous, partout et ailleurs'
@@ -12,16 +13,18 @@ export default function Home() {
 		<section>
 			<Banner img={bannerHome} title={titleHome} />
 
-			<div>
-				{rentals.map(({ id, title, pictures }) => {
-					return (
-						<Card
-							id={id}
-							title={title}
-							picture={pictures[0]}
-						/>
-					)
-				})}
+			<div className={style.galeryBG}>
+				<div className={style.galery}>
+					{rentals.map(({ id, title, pictures }) => {
+						return (
+							<Card
+								id={id}
+								title={title}
+								picture={pictures[0]}
+							/>
+						)
+					})}
+				</div>
 			</div>
 		</section>
 	)

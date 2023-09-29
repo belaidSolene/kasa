@@ -1,0 +1,11 @@
+.galeryBG {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 56px;
+}
