@@ -8,6 +8,8 @@ import About from './pages/About'
 import Rental from './pages/Rental'
 import Error from './pages/Error'
 
+import Lab from './pages/Lab'
+
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
 			{
 				path: 'rental/:idRental',
 				element: <Rental />,
+			},
+			{
+				path: 'lab',
+				element: <Lab />,
 			},
 		],
 	},
