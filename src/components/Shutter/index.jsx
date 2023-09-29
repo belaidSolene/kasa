@@ -6,6 +6,10 @@ export default function Shutter({ btn, txt }) {
 	const [isOpen, setIsOpen] = useState(false)
 	const [isHidden, setIsHidden] = useState(true)
 
+	function capitalizeString(str) {
+		return str[0].toUpperCase() + str.slice(1).toLowerCase()
+	}
+
 	function handleClick() {
 		if (isOpen) {
 			setIsOpen(false)
@@ -19,33 +23,49 @@ export default function Shutter({ btn, txt }) {
 		}
 	}
 
+	const content =
+		typeof txt === 'object' ? (
+			<ul>
+				{txt.map((element) => {
+					return (
+						<li
+							className={style.li}
+							key={element}
+						>
+							{element}
+						</li>
+					)
+				})}
+			</ul>
+		) : (
+			<p>{txt}</p>
+		)
+
 	return (
-		<div>
-			<button onClick={handleClick}>
-				{btn}{' '}
-				<Arrow
-					className={
-						isOpen
-							? `${style.arrow} ${style.rotate}`
-							: style.arrow
-					}
-				/>
-			</button>
-			<p
-				className={`${style.text} 
+		<div className={style.shutter}>
+			<div className={style.topBar}>
+				{capitalizeString(btn)}
+				<button onClick={handleClick}>
+					<Arrow
+						className={`${style.arrow} 
+							${isOpen ? style.rotate : style.arrow}`}
+					/>
+				</button>
+			</div>
+
+			<div
+				className={`${style.content} 
 					${
 						isOpen
 							? `${style.fadeIn}`
-							: `${style.fadeOut} ${
-									isHidden
-										? `${style.hidden}`
-										: ''
-							  }`
+							: `${style.fadeOut} 
+								${style.notVisible} 
+								${isHidden ? `${style.hidden}` : ''}`
 					}
 				`}
 			>
-				{txt}
-			</p>
+				{content}
+			</div>
 		</div>
 	)
 }

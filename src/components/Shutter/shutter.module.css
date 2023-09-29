@@ -1,18 +1,44 @@
+.shutter{
+  border-radius: inherit;
+}
+
+.topBar {
+  color: #F6F6F6;
+  background-color: #FF6060;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: inherit;
+}
+
 .arrow {
     display: inline-block;
     transition: 300ms ease-in-out;
 }
 
 .rotate {
-    transform: rotate(180deg)
+  transform: rotate(180deg)
 }
 
-.text {
-   color: red;
+.content {
+  color: #FF6060;
+  background-color: #F6F6F6;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+}
+
+.li{
+  margin: 10px 0;
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+.notVisible {
+  opacity: 0;
 }
 
 .fadeIn {
@@ -24,24 +50,29 @@
 }
 
 @keyframes appear {
-    0% {
+  0% {
       opacity: 0;
       transform: translateY(25%);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0%);
-    }
   }
+}
 
 @keyframes disappear {
     0% {
         opacity: 1;
         transform: translateY(0%);
       }
+
+      50% {
+        opacity: 0.7;
+      }
+
       100% {
         opacity: 0;
-        transform: translateY(25%);
+        transform: translateY(-45%);
       }
 }
   
