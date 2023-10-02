@@ -14,7 +14,7 @@ export default function Lab() {
 		location,
 		equipments,
 		tags,
-	} = rentals[17]
+	} = rentals[7]
 
 	return (
 		<section className={style.rental}>
