@@ -1,7 +1,7 @@
 import { rentals } from '../../datas/rentals'
 import Carousel from '../../components/Carousel'
 import RatingStars from '../../components/RatingStars'
-import Shutter from '../../components/Shutter'
+import Collapse from '../../components/Collapse'
 import style from './lab.module.css'
 
 export default function Lab() {
@@ -53,8 +53,6 @@ export default function Lab() {
 							)
 						})}
 					</ul>
-
-					<ul className={style.rating}></ul>
 				</div>
 
 				<div className={style.rightSide}>
@@ -72,15 +70,15 @@ export default function Lab() {
 			</div>
 
 			<div className={style.details}>
-				<div className={style.wrapperShutter}>
-					<Shutter
+				<div className={style.wrapperCollapse}>
+					<Collapse
 						btn='description'
 						txt={description}
 					/>
 				</div>
 
-				<div className={style.wrapperShutter}>
-					<Shutter
+				<div className={style.wrapperCollapse}>
+					<Collapse
 						btn='équipements'
 						txt={equipments}
 					/>

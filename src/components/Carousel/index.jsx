@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import { ReactComponent as ArrowPrev } from '../../assets/arrows/arrowPrev.svg'
-import { ReactComponent as ArrowNext } from '../../assets/arrows/arrowNext.svg'
+import { ReactComponent as ArrowPrev } from '../../assets/arrows/arrowCarouselPrev.svg'
+import { ReactComponent as ArrowNext } from '../../assets/arrows/arrowCarouselNext.svg'
 import style from './carousel.module.css'
 
 export default function Carousel({ pictures }) {

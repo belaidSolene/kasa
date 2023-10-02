@@ -2,7 +2,7 @@ import { aboutDatas } from '../../datas/about'
 import bannerAbout from '../../assets/banners/bannerAbout.png'
 
 import Banner from '../../components/Banner'
-import Shutter from '../../components/Shutter'
+import Collapse from '../../components/Collapse'
 import style from './about.module.css'
 
 function About() {
@@ -12,8 +12,8 @@ function About() {
 
 			{aboutDatas.map(({ title, description }, i) => {
 				return (
-					<div className={style.wrapperShutter}>
-						<Shutter
+					<div className={style.wrapperCollapse}>
+						<Collapse
 							btn={title}
 							txt={description}
 						/>

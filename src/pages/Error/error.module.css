@@ -1,0 +1,19 @@
+.errorDiv {
+    text-align: center;
+    color: #FF6060;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 288px;
+}
+
+.subtitle {
+    font-size: 36px;
+    margin: 8rem  0 ;
+}
+
+.link {
+    text-decoration: underline;
+    text-decoration-color: #FF6060;
+}

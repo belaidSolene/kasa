@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { ReactComponent as Arrow } from '../../assets/arrows/arrowShutter.svg'
-import style from './shutter.module.css'
+import { ReactComponent as Arrow } from '../../assets/arrows/arrowCollapse.svg'
+import style from './collapse.module.css'
 
-export default function Shutter({ btn, txt }) {
+export default function Collapse({ btn, txt }) {
 	const [isOpen, setIsOpen] = useState(false)
 	const [isHidden, setIsHidden] = useState(true)
 
@@ -42,7 +42,7 @@ export default function Shutter({ btn, txt }) {
 		)
 
 	return (
-		<div className={style.shutter}>
+		<div className={style.Collapse}>
 			<div className={style.topBar}>
 				{capitalizeString(btn)}
 				<button onClick={handleClick}>
