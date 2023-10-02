@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ReactComponent as Arrow } from '../../assets/arrow.svg'
+import { ReactComponent as Arrow } from '../../assets/arrows/arrowShutter.svg'
 import style from './shutter.module.css'
 
 export default function Shutter({ btn, txt }) {

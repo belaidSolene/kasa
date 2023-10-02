@@ -10,6 +10,7 @@ export default function Card({ id, title, picture }) {
 					src={picture}
 					alt={title}
 				/>
+				<div className={style.filterPicture}></div>
 				<h2 className={style.title}>{title}</h2>
 			</article>
 		</Link>

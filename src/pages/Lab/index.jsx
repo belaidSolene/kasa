@@ -1,4 +1,5 @@
 import { rentals } from '../../datas/rentals'
+import Carousel from '../../components/Carousel'
 import RatingStars from '../../components/RatingStars'
 import Shutter from '../../components/Shutter'
 import style from './lab.module.css'
@@ -13,16 +14,20 @@ export default function Lab() {
 		location,
 		equipments,
 		tags,
-	} = rentals[0]
+	} = rentals[17]
 
 	return (
 		<section className={style.rental}>
 			<div className={style.pictures}>
-				<img
-					className={style.cover}
-					src={pictures[0]}
-					alt=''
-				/>
+				{pictures.length > 1 ? (
+					<Carousel pictures={pictures} />
+				) : (
+					<img
+						className={style.cover}
+						src={pictures[0]}
+						alt=''
+					/>
+				)}
 			</div>
 
 			<div className={style.header}>

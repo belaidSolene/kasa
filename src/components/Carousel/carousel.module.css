@@ -1,0 +1,40 @@
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.arrowPrev,
+.arrowNext {
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+}
+
+.arrowPrev {
+    left: 1rem;
+}
+
+.arrowNext {
+    right: 1rem;
+}
+
+.index {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.index > span {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
