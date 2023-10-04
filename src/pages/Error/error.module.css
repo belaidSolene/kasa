@@ -6,11 +6,12 @@
 .title {
     font-weight: 700;
     font-size: 288px;
+    margin: 2.5rem;
 }
 
 .subtitle {
     font-size: 36px;
-    margin: 8rem  0 ;
+    margin: 7rem  0 ;
 }
 
 .link {

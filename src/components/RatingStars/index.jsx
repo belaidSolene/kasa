@@ -1,5 +1,5 @@
-import { ReactComponent as Star } from '../../assets/star.svg'
-import { ReactComponent as StarActive } from '../../assets/star-active.svg'
+import { ReactComponent as Star } from '../../assets/star/star.svg'
+import { ReactComponent as StarActive } from '../../assets/star/star-active.svg'
 import style from './ratingStars.module.css'
 
 export default function RatingStars({ rating }) {

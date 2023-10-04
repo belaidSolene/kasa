@@ -1,5 +1,5 @@
 import { aboutDatas } from '../../datas/about'
-import bannerAbout from '../../assets/banners/bannerAbout.png'
+import bannerAbout from '../../assets/banner/bannerAbout.png'
 
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'

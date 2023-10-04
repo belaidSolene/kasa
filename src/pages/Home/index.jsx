@@ -1,6 +1,6 @@
 //import { Rentals } from '../../datas/rentals-link'
 import { rentals } from '../../datas/rentals'
-import bannerHome from '../../assets/banners/bannerHome.png'
+import bannerHome from '../../assets/banner/bannerHome.png'
 
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
