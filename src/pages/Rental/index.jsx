@@ -4,6 +4,8 @@ import { rentals } from '../../datas/rentals'
 
 import Error from '../Error'
 import Carousel from '../../components/Carousel'
+import Tag from '../../components/Tag'
+import Host from '../../components/Host'
 import RatingStars from '../../components/RatingStars'
 import Collapse from '../../components/Collapse'
 import style from './rental.module.css'
@@ -49,31 +51,14 @@ export default function Rental() {
 							{location}
 						</h2>
 
-						<ul className={style.tags}>
-							{tags.map((tag) => {
-								return (
-									<li
-										key={tag}
-										className={
-											style.tag
-										}
-									>
-										{tag}
-									</li>
-								)
-							})}
-						</ul>
+						<Tag tags={tags} />
 					</div>
 
 					<div className={style.rightSide}>
-						<div className={style.host}>
-							{host.name}
-							<img
-								className={style.hostPP}
-								src={host.picture}
-								alt={host.name}
-							/>
-						</div>
+						<Host
+							name={host.name}
+							picture={host.picture}
+						/>
 
 						<RatingStars rating={rating} />
 					</div>

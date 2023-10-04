@@ -1,3 +1,5 @@
+import propType from 'prop-types'
+
 import { ReactComponent as Star } from '../../assets/star/star.svg'
 import { ReactComponent as StarActive } from '../../assets/star/star-active.svg'
 import style from './ratingStars.module.css'
@@ -21,4 +23,8 @@ export default function RatingStars({ rating }) {
 			))}
 		</ul>
 	)
+}
+
+RatingStars.protoType = {
+	rating: propType.array.isRequired,
 }
