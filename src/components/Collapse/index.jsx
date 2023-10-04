@@ -5,7 +5,7 @@ import { ReactComponent as Arrow } from '../../assets/arrow/arrowCollapse.svg'
 import style from './collapse.module.css'
 
 export default function Collapse({ title, txt }) {
-	const [isOpen, setIsOpen] = useState(false)
+	const [isCollapse, setIsCollapse] = useState(false)
 	const [isHidden, setIsHidden] = useState(true)
 
 	function capitalizeString(str) {
@@ -13,14 +13,14 @@ export default function Collapse({ title, txt }) {
 	}
 
 	function handleClick() {
-		if (isOpen) {
-			setIsOpen(false)
+		if (isCollapse) {
+			setIsCollapse(false)
 
 			setTimeout(() => {
 				setIsHidden(true)
-			}, 330)
+			}, 290)
 		} else {
-			setIsOpen(true)
+			setIsCollapse(true)
 			setIsHidden(false)
 		}
 	}
@@ -50,7 +50,7 @@ export default function Collapse({ title, txt }) {
 				<button onClick={handleClick}>
 					<Arrow
 						className={`${style.arrow} 
-							${isOpen ? style.rotate : style.arrow}`}
+							${isCollapse ? style.rotate : style.arrow}`}
 					/>
 				</button>
 			</div>
@@ -58,7 +58,7 @@ export default function Collapse({ title, txt }) {
 			<div
 				className={`${style.content} 
 					${
-						isOpen
+						isCollapse
 							? `${style.fadeIn}`
 							: `${style.fadeOut} 
 								${style.notVisible} 
