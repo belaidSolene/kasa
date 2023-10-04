@@ -10,7 +10,7 @@ export default function Header() {
 				<img src={logo} alt='kasa' />
 			</Link>
 			<nav>
-				<NavLink to='/'>
+				<NavLink to='/' className={style.navLink}>
 					{({ isActive }) => (
 						<span
 							className={
@@ -22,7 +22,7 @@ export default function Header() {
 					)}
 				</NavLink>
 
-				<NavLink to='about'>
+				<NavLink to='about' className={style.navLink}>
 					{({ isActive }) => (
 						<span
 							className={

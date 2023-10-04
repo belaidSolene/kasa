@@ -7,14 +7,14 @@ import Card from '../../components/Card'
 import style from './home.module.css'
 
 export default function Home() {
-	const titleHome = 'Chez vous, partout et ailleurs'
+	const title = 'Chez vous, partout et ailleurs'
 
 	return (
 		<section>
-			<Banner img={bannerHome} title={titleHome} />
+			<Banner img={bannerHome} title={title} />
 
-			<div className={style.galeryBG}>
-				<div className={style.galery}>
+			<div className={style.rentalsBG}>
+				<div className={style.rentals}>
 					{rentals.map(({ id, title, pictures }) => {
 						return (
 							<Card

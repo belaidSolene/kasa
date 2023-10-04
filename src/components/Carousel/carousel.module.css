@@ -38,3 +38,24 @@
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+@media screen and (max-width: 600px) {
+
+    .arrowPrev > svg,
+    .arrowNext > svg {
+        width: 11.67px;
+        height: 19.8px;
+    }
+
+    .arrowPrev {
+        left: 4px;
+    }
+
+    .arrowNext {
+        right: 4px;
+    }
+
+    .index {
+        display: none;
+    }
+}

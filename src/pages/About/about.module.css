@@ -3,3 +3,9 @@
     overflow: hidden;
     margin: 3rem;
 }
+
+@media screen and (max-width: 600px) {
+    .wrapperCollapse {
+       margin: 20px 0;
+    }
+}

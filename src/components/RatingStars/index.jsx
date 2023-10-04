@@ -11,9 +11,9 @@ export default function RatingStars({ rating }) {
 	const stars = []
 	for (let i = 1; i <= 5; i++) {
 		if (i <= limitedRating) {
-			stars.push(<StarActive key={i} />)
+			stars.push(<StarActive className={style.star} key={i} />)
 		} else {
-			stars.push(<Star key={i} />)
+			stars.push(<Star className={style.star} key={i} />)
 		}
 	}
 	return (

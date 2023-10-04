@@ -27,13 +27,13 @@ export default function Collapse({ title, txt }) {
 
 	const content =
 		typeof txt === 'string' ? (
-			<p>{txt}</p>
+			<p className={style.txt}>{txt}</p>
 		) : (
 			<ul>
 				{txt.map((element) => {
 					return (
 						<li
-							className={style.li}
+							className={style.txt}
 							key={element}
 						>
 							{element}

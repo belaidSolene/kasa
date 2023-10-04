@@ -3,3 +3,11 @@
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 600px) {
+
+    .star {
+        height: 13px;
+        width: 13px;
+    }
+}

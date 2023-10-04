@@ -7,7 +7,23 @@
     margin-bottom: 24px;
 }
 
+.name > span {
+   display: block;
+}
+
 .hostPP {
     border-radius: 50%;
     width: 65px;
+}
+
+@media screen and (max-width: 600px) {
+    .host {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .hostPP {
+        width: 32px;
+        height: 32px;
+    }
 }

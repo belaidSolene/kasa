@@ -1,11 +1,24 @@
-.galeryBG {
+.rentalsBG {
     background-color: #F6F6F6;
     border-radius: 25px;
 }
 
-.galery {
+.rentals {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     padding: 56px;
+}
+
+@media screen and (max-width: 600px) {
+    .rentalsBG {
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .rentals {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
 }

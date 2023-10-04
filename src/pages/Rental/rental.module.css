@@ -2,7 +2,7 @@
     color: #FF6060;
 }
 
-.pictures {
+.wrapperCarousel {
     border-radius: 25px;
     overflow: hidden;
     height: 415px;
@@ -24,7 +24,6 @@
     width: 100%;
 }
 
-
 .title {
     font-size: 36px;
 }
@@ -35,7 +34,7 @@
 }
 
 .rating {
- padding-right: 16px;
+    padding-right: 16px;
 }
 
 .details {
@@ -43,8 +42,46 @@
     gap: 4.38rem;
 }
 
-.wrapperCollapse{
+.wrapperCollapse {
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapperCarousel {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        margin: 12px 0;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .location{
+        font-size: 14px;
+        margin: 12px 0;
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 0;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .wrapperCollapse {
+        border-radius: 5px;
+    }
 }

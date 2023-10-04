@@ -11,10 +11,25 @@ nav{
     gap: 57px;
 }
 
-a{
-    color: #FF6060;
-}
-
 .active {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        margin: 1rem;
+    }
+
+    img{
+        width: 145px;
+        height: 46.88px;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    .navLink{
+        font-size: 12px;
+    }
 }

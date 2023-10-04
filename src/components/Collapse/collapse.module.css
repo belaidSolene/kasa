@@ -30,7 +30,7 @@
   line-height: 25.67px;
 }
 
-.li{
+.txt{
   margin: 10px 0;
 }
 
@@ -76,4 +76,28 @@
         transform: translateY(-15%);
       }
 }
-  
+
+
+@media screen and (max-width: 600px) {
+  .topBar,
+  .content {
+    font-size: 13px;
+  }
+
+  .topBar {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 8px 16px;
+  }
+
+  .txt {
+    margin: 0;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 9.14px;
+  }
+}

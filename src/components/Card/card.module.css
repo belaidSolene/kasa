@@ -29,3 +29,11 @@
     font-size: 18px;
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 335px;
+        height: 255px;
+    }
+}

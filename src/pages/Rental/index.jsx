@@ -30,7 +30,7 @@ export default function Rental() {
 
 		return (
 			<section className={style.rental}>
-				<div className={style.pictures}>
+				<div className={style.wrapperCarousel}>
 					{pictures.length > 1 ? (
 						<Carousel pictures={pictures} />
 					) : (
