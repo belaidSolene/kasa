@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import propType from 'prop-types'
 
-import { ReactComponent as ArrowPrev } from '../../assets/arrows/arrowCarouselPrev.svg'
-import { ReactComponent as ArrowNext } from '../../assets/arrows/arrowCarouselNext.svg'
+import { ReactComponent as ArrowPrev } from '../../assets/arrow/arrowCarouselPrev.svg'
+import { ReactComponent as ArrowNext } from '../../assets/arrow/arrowCarouselNext.svg'
 import style from './carousel.module.css'
 
 export default function Carousel({ pictures }) {
@@ -42,4 +43,8 @@ export default function Carousel({ pictures }) {
 			</p>
 		</div>
 	)
+}
+
+Carousel.protoType = {
+	pictures: propType.array.isRequired,
 }

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import style from './banner.module.css'
 
 export default function Banner({ img, title }) {
@@ -8,4 +10,9 @@ export default function Banner({ img, title }) {
 			{title && <h1 className={style.title}>{title}</h1>}
 		</div>
 	)
+}
+
+Banner.protoTypes = {
+	img: PropTypes.string.isRequired,
+	title: PropTypes.string,
 }

@@ -10,10 +10,6 @@ import style from './rental.module.css'
 
 export default function Rental() {
 	const { idRental } = useParams()
-	console.log(idRental)
-
-	console.log(rentals.includes(idRental))
-
 	const rental = rentals.find((rental) => rental.id === idRental)
 
 	if (!rental) {
@@ -86,14 +82,14 @@ export default function Rental() {
 				<div className={style.details}>
 					<div className={style.wrapperCollapse}>
 						<Collapse
-							btn='description'
+							title='description'
 							txt={description}
 						/>
 					</div>
 
 					<div className={style.wrapperCollapse}>
 						<Collapse
-							btn='équipements'
+							title='équipements'
 							txt={equipments}
 						/>
 					</div>

@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import { ReactComponent as Arrow } from '../../assets/arrows/arrowCollapse.svg'
+import propType from 'prop-types'
+
+import { ReactComponent as Arrow } from '../../assets/arrow/arrowCollapse.svg'
 import style from './collapse.module.css'
 
-export default function Collapse({ btn, txt }) {
+export default function Collapse({ title, txt }) {
 	const [isOpen, setIsOpen] = useState(false)
 	const [isHidden, setIsHidden] = useState(true)
 
@@ -24,7 +26,9 @@ export default function Collapse({ btn, txt }) {
 	}
 
 	const content =
-		typeof txt === 'object' ? (
+		typeof txt === 'string' ? (
+			<p>{txt}</p>
+		) : (
 			<ul>
 				{txt.map((element) => {
 					return (
@@ -37,14 +41,12 @@ export default function Collapse({ btn, txt }) {
 					)
 				})}
 			</ul>
-		) : (
-			<p>{txt}</p>
 		)
 
 	return (
 		<div className={style.Collapse}>
 			<div className={style.topBar}>
-				{capitalizeString(btn)}
+				{capitalizeString(title)}
 				<button onClick={handleClick}>
 					<Arrow
 						className={`${style.arrow} 
@@ -68,4 +70,9 @@ export default function Collapse({ btn, txt }) {
 			</div>
 		</div>
 	)
+}
+
+Collapse.protoTypes = {
+	title: propType.string.isRequired,
+	txt: propType.oneOfType([propType.string, propType.array]).isRequired,
 }

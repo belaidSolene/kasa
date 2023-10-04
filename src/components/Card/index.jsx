@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import propType from 'prop-types'
+
 import style from './card.module.css'
 
 export default function Card({ id, title, picture }) {
@@ -15,4 +17,10 @@ export default function Card({ id, title, picture }) {
 			</article>
 		</Link>
 	)
+}
+
+Card.protoTypes = {
+	id: propType.string.isRequired,
+	title: propType.string.isRequired,
+	picture: propType.string.isRequired,
 }

@@ -14,7 +14,7 @@ function About() {
 				return (
 					<div className={style.wrapperCollapse}>
 						<Collapse
-							btn={title}
+							title={title}
 							txt={description}
 						/>
 					</div>

@@ -1,4 +1,4 @@
-import { ReactComponent as Logo } from '../../assets/logos/logo-footer.svg'
+import { ReactComponent as Logo } from '../../assets/logo/logo-footer.svg'
 import styles from './footer.module.css'
 
 export default function Footer() {

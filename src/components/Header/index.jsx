@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 
-import logo from '../../assets/logos/logo-header.svg'
+import logo from '../../assets/logo/logo-header.svg'
 import style from './header.module.css'
 
 export default function Header() {
@@ -14,9 +14,7 @@ export default function Header() {
 					{({ isActive }) => (
 						<span
 							className={
-								isActive
-									? style.active
-									: ''
+								isActive && style.active
 							}
 						>
 							Accueil
@@ -28,9 +26,7 @@ export default function Header() {
 					{({ isActive }) => (
 						<span
 							className={
-								isActive
-									? style.active
-									: ''
+								isActive && style.active
 							}
 						>
 							A Propos
