@@ -19,6 +19,12 @@
     text-decoration-color: #FF6060;
 }
 
+@media  screen and (max-width: 992px) {
+    .errorDiv {
+        margin: 0 2.5rem 4rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .title {
