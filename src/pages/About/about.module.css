@@ -4,6 +4,12 @@
     margin: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+    .aboutSection {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .wrapperCollapse {
        margin: 20px 0;

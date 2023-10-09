@@ -30,27 +30,33 @@
     font-size: 48px;
     color: white;
     position: absolute;
-    top: 40%;
-    width: 100%;
+    top: 0;
     height: 100%;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .banner {
+        margin: 2.5rem;
+        width: auto;
+    }
+
+    .title {
+        font-size: 34px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .banner {
-        width: 100%;
-        max-width: 335px;
         height: 111px;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
         border-radius: 10px;
     }
 
     .title {
         font-size: 24px;
-        top: 30px;
-        text-align: start;
-        margin: 0 20px;
-        height: fit-content;
-        width: fit-content;
     }
 }

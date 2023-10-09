@@ -7,7 +7,7 @@ import style from './about.module.css'
 
 function About() {
 	return (
-		<section>
+		<section className={style.aboutSection}>
 			<Banner img={bannerAbout} />
 
 			{aboutDatas.map(({ title, description }, i) => {

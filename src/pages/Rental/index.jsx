@@ -27,54 +27,66 @@ export default function Rental() {
 		} = rental
 
 		return (
-			<section className={style.rental}>
-				<div className={style.wrapperCarousel}>
-					{pictures.length > 1 ? (
-						<Carousel pictures={pictures} />
-					) : (
-						<img
-							className={style.cover}
-							src={pictures[0]}
-							alt=''
-						/>
-					)}
-				</div>
-
-				<div className={style.header}>
-					<div className={style.leftSide}>
-						<h1 className={style.title}>
-							{title.toUpperCase()}
-						</h1>
-						<h2 className={style.location}>
-							{location}
-						</h2>
-
-						<Tag tags={tags} />
+			<section className={style.wrapperRental}>
+				<div className={style.rental}>
+					<div className={style.wrapperCarousel}>
+						{pictures.length > 1 ? (
+							<Carousel
+								pictures={pictures}
+							/>
+						) : (
+							<img
+								className={style.cover}
+								src={pictures[0]}
+								alt=''
+							/>
+						)}
 					</div>
 
-					<div className={style.rightSide}>
-						<Host
-							name={host.name}
-							picture={host.picture}
-						/>
+					<div className={style.header}>
+						<div className={style.leftSide}>
+							<h1 className={style.title}>
+								{title.toUpperCase()}
+							</h1>
+							<h2 className={style.location}>
+								{location}
+							</h2>
 
-						<RatingStars rating={rating} />
+							<Tag tags={tags} />
+						</div>
+
+						<div className={style.rightSide}>
+							<Host
+								name={host.name}
+								picture={host.picture}
+							/>
+
+							<RatingStars rating={rating} />
+						</div>
 					</div>
-				</div>
 
-				<div className={style.details}>
-					<div className={style.wrapperCollapse}>
-						<Collapse
-							title='description'
-							txt={description}
-						/>
-					</div>
+					<div className={style.details}>
+						<div
+							className={
+								style.wrapperCollapse
+							}
+						>
+							<Collapse
+								title='description'
+								txt={description}
+							/>
+						</div>
 
-					<div className={style.wrapperCollapse}>
-						<Collapse
-							title='équipements'
-							txt={equipments}
-						/>
+						<div
+							className={
+								style.wrapperCollapse
+							}
+						>
+							<Collapse
+								title='équipements'
+								txt={equipments}
+							/>
+						</div>
 					</div>
 				</div>
 			</section>

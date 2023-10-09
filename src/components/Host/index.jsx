@@ -9,7 +9,7 @@ export default function Host({ name, picture }) {
 		<div className={style.host}>
 			<p className={style.name}>
 				<span>{names[0]}</span>
-				<span>{names[1]}</span>
+				<span> {names[1]}</span>
 			</p>
 
 			<img className={style.hostPP} src={picture} alt={name} />

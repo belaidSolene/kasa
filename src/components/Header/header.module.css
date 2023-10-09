@@ -1,9 +1,14 @@
+.wrapperHeader {
+    width: 100%;
+    
+}
+
 header {
+    margin: 1.7rem 4rem 0;
     display: flex;
 	justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    margin: 1.7rem 4rem 0;
 }
 
 nav{
@@ -15,9 +20,18 @@ nav{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 992px) {
+    header{
+        margin: 1.7rem 2.5rem 0;
+        
+    }
+}
+
 @media screen and (max-width: 600px) {
     header{
-        margin: 1rem;
+        margin: 1rem 1rem 0;
+        font-size: 12px;
+
     }
 
     img{
@@ -27,9 +41,5 @@ nav{
 
     nav{
         gap: 20px;
-    }
-
-    .navLink{
-        font-size: 12px;
     }
 }

@@ -10,6 +10,19 @@
     padding: 56px;
 }
 
+@media screen and (max-width: 992px) {
+    .rentalsBG {
+        background-color: #F6F6F6;
+        border-radius: 0;
+    }
+
+    .rentals {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .rentalsBG {
         background-color: transparent;

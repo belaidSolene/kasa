@@ -39,6 +39,15 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 992px) {
+    .arrowPrev > svg,
+    .arrowNext > svg {
+        width: 24px;
+        height: 40.72px;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
 
     .arrowPrev > svg,
