@@ -14,7 +14,9 @@ export default function Header() {
 					{({ isActive }) => (
 						<span
 							className={
-								isActive && style.active
+								isActive
+									? style.active
+									: undefined
 							}
 						>
 							Accueil
@@ -26,7 +28,9 @@ export default function Header() {
 					{({ isActive }) => (
 						<span
 							className={
-								isActive && style.active
+								isActive
+									? style.active
+									: undefined
 							}
 						>
 							A Propos

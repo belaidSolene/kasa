@@ -24,6 +24,7 @@ const router = createBrowserRouter([
 			{
 				path: 'rental/:idRental',
 				element: <Rental />,
+				errorElement: <Error />,
 			},
 			{
 				path: '*',

@@ -18,6 +18,7 @@ export default function Home() {
 					{rentals.map(({ id, title, pictures }) => {
 						return (
 							<Card
+								key={id}
 								id={id}
 								title={title}
 								picture={pictures[0]}

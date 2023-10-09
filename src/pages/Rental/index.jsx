@@ -1,8 +1,6 @@
-import { useParams } from 'react-router-dom'
+import { useParams, redirect } from 'react-router-dom'
 
-import { rentals } from '../../datas/rentals'
-
-import Error from '../Error'
+import { getRental } from '../../utils/getRental'
 import Carousel from '../../components/Carousel'
 import Tag from '../../components/Tag'
 import Host from '../../components/Host'
@@ -12,10 +10,10 @@ import style from './rental.module.css'
 
 export default function Rental() {
 	const { idRental } = useParams()
-	const rental = rentals.find((rental) => rental.id === idRental)
+	const rental = getRental(idRental)
 
 	if (!rental) {
-		return <Error />
+		return redirect('/*')
 	} else {
 		const {
 			title,
