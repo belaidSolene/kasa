@@ -44,7 +44,7 @@ export default function Collapse({ title, txt }) {
 		)
 
 	return (
-		<div className={style.Collapse}>
+		<div className={style.collapse}>
 			<div className={style.topBar}>
 				{capitalizeString(title)}
 				<button onClick={handleClick}>

@@ -5,7 +5,7 @@ import style from './card.module.css'
 
 export default function Card({ id, title, picture }) {
 	return (
-		<Link to={`rental/${id}`}>
+		<Link to={`rental/${id}`} reloadDocument>
 			<article className={style.card}>
 				<img
 					className={style.picture}

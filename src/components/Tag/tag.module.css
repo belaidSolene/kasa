@@ -18,6 +18,7 @@
 @media screen and (max-width: 600px) {
     .tags {
         gap: 8px;
+        justify-content: space-between;
     }
 
     .tag {

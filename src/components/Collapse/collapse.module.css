@@ -1,5 +1,7 @@
-.Collapse{
+.collapse{
   border-radius: inherit;
+  background-color: #F6F6F6;
+  overflow: hidden;
 }
 
 .topBar {
@@ -23,7 +25,7 @@
 
 .content {
   color: #FF6060;
-  background-color: #F6F6F6;
+  background-color: transparent;
   font-size: 18px;
   margin: 0;
   padding: 20px;
