@@ -6,7 +6,7 @@ export default function Host({ name, picture }) {
 	const names = name.split(' ')
 
 	return (
-		<div className={style.host}>
+		<div className={style.host} data-testid='host'>
 			<p className={style.name}>
 				<span>{names[0]}</span>
 				<span> {names[1]}</span>

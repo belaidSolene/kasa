@@ -15,13 +15,13 @@ export default function Home() {
 
 			<div className={style.rentalsBG}>
 				<div className={style.rentals}>
-					{rentals.map(({ id, title, pictures }) => {
+					{rentals.map(({ id, title, cover }) => {
 						return (
 							<Card
 								key={id}
 								id={id}
 								title={title}
-								picture={pictures[0]}
+								cover={cover}
 							/>
 						)
 					})}

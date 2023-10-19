@@ -4,7 +4,7 @@ import style from './tag.module.css'
 
 export default function Tag({ tags }) {
 	return (
-		<ul className={style.tags}>
+		<ul className={style.tags} data-testid='tags-list'>
 			{tags.map((tag) => {
 				return (
 					<li key={tag} className={style.tag}>

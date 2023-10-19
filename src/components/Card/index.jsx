@@ -3,13 +3,13 @@ import propType from 'prop-types'
 
 import style from './card.module.css'
 
-export default function Card({ id, title, picture }) {
+export default function Card({ id, title, cover }) {
 	return (
 		<Link to={`rental/${id}`} reloadDocument>
 			<article className={style.card}>
 				<img
 					className={style.picture}
-					src={picture}
+					src={cover}
 					alt={title}
 				/>
 				<div className={style.filterPicture}></div>

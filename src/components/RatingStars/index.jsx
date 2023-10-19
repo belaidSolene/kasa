@@ -17,7 +17,7 @@ export default function RatingStars({ rating }) {
 		}
 	}
 	return (
-		<ul className={style.rating}>
+		<ul className={style.rating} data-testid='rating-stars'>
 			{stars.map((star, index) => (
 				<li key={index}>{star}</li>
 			))}

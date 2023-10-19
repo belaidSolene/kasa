@@ -6,7 +6,7 @@ import style from './header.module.css'
 export default function Header() {
 	return (
 		<div className={style.wrapperHeader}>
-			<header className={style.header}>
+			<header className={style.header} data-testid='header'>
 				<Link to={'/'}>
 					<img src={logo} alt='kasa' />
 				</Link>

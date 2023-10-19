@@ -4,13 +4,13 @@ import propType from 'prop-types'
 import { ReactComponent as Arrow } from '../../assets/arrow/arrowCollapse.svg'
 import style from './collapse.module.css'
 
+export function capitalizeString(str) {
+	return str[0].toUpperCase() + str.slice(1).toLowerCase()
+}
+
 export default function Collapse({ title, txt }) {
 	const [isCollapse, setIsCollapse] = useState(false)
 	const [isHidden, setIsHidden] = useState(true)
-
-	function capitalizeString(str) {
-		return str[0].toUpperCase() + str.slice(1).toLowerCase()
-	}
 
 	function handleClick() {
 		if (isCollapse) {
@@ -29,7 +29,7 @@ export default function Collapse({ title, txt }) {
 		typeof txt === 'string' ? (
 			<p className={style.txt}>{txt}</p>
 		) : (
-			<ul>
+			<ul data-testid='content-list'>
 				{txt.map((element) => {
 					return (
 						<li
@@ -56,6 +56,7 @@ export default function Collapse({ title, txt }) {
 			</div>
 
 			<div
+				data-testid='content-collapse'
 				className={`${style.content} 
 					${
 						isCollapse

@@ -21,6 +21,7 @@ export default function Carousel({ pictures }) {
 						? setIndex(numberPic - 1)
 						: setIndex(index - 1)
 				}}
+				data-testid='prevBtn'
 			>
 				<ArrowPrev />
 			</button>
@@ -32,6 +33,7 @@ export default function Carousel({ pictures }) {
 						? setIndex(0)
 						: setIndex(index + 1)
 				}}
+				data-testid='nextBtn'
 			>
 				<ArrowNext />
 			</button>
