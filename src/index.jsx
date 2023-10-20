@@ -8,7 +8,7 @@ import About from './pages/About'
 import Rental from './pages/Rental'
 import Error from './pages/Error'
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,

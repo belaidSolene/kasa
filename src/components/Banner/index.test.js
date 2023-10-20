@@ -26,6 +26,6 @@ describe('Banner testing', () => {
         )
 
         expect(screen.getByRole('img')).toHaveAttribute('src', bannerHome)
-        expect(screen.queryByRole('heading')).not.toBeTruthy()
+        expect(screen.queryByRole('heading')).not.toBeInTheDocument()
     })
 })
