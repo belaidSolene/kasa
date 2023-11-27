@@ -1,9 +1,19 @@
+/**
+ * The Header component represents the header section of the application.
+ * It includes the application logo, navigation links using React Router DOM's
+ * Link and NavLink component.
+ */
+
 import { Link, NavLink } from 'react-router-dom'
 
+// Importing the application logo
 import logo from '../../assets/logo/logo-header.svg'
+
+// Importing the stylesheet for styling
 import style from './header.module.css'
 
 export default function Header() {
+	// JSX structure defining the Header component layout
 	return (
 		<div className={style.wrapperHeader}>
 			<header className={style.header} data-testid='header'>

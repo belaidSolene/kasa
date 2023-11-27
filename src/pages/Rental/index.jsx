@@ -1,20 +1,35 @@
+/**
+ * The Rental component represents a detailed view of a rental property.
+ * It retrieves information about the rental using the 'idRental' parameter from the URL and displays its details.
+ * If the provided ID does not exist, the component redirects to the error page.
+ */
+
 import { useParams, redirect } from 'react-router-dom'
 
+// Importing utility function to get rental information
 import { getRental } from '../../utils/getRental'
+
+// Importing reusable components
 import Carousel from '../../components/Carousel'
 import Tag from '../../components/Tag'
 import Host from '../../components/Host'
 import RatingStars from '../../components/RatingStars'
 import Collapse from '../../components/Collapse'
+
+// Importing the stylesheet for styling
 import style from './rental.module.css'
 
 export default function Rental() {
+	// Retrieving the 'idRental' parameter from the URL
 	const { idRental } = useParams()
+
+	// Getting rental information based on the retrieved ID
 	const rental = getRental(idRental)
 
 	if (!rental) {
 		return redirect('/*')
 	} else {
+		// Destructuring rental information for easier access
 		const {
 			title,
 			pictures,
@@ -26,6 +41,7 @@ export default function Rental() {
 			tags,
 		} = rental
 
+		// JSX structure defining the Rental component layout
 		return (
 			<section className={style.wrapperRental}>
 				<div className={style.rental}>

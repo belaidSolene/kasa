@@ -2,13 +2,15 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// Importing custom page components
 import Root from './pages/Root'
 import Home from './pages/Home'
 import About from './pages/About'
 import Rental from './pages/Rental'
 import Error from './pages/Error'
 
-export const router = createBrowserRouter([
+// Creating a browser router with defined routes and associated components
+const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,
