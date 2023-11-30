@@ -11,7 +11,7 @@ import { ReactComponent as Star } from '../../assets/star/star.svg'
 import { ReactComponent as StarActive } from '../../assets/star/star-active.svg'
 
 // Importing the stylesheet for styling
-import style from './ratingStars.module.css'
+import style from './ratingStars.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the RatingStars component.

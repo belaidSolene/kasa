@@ -17,7 +17,7 @@ import RatingStars from '../../components/RatingStars'
 import Collapse from '../../components/Collapse'
 
 // Importing the stylesheet for styling
-import style from './rental.module.css'
+import style from './rental.module.scss'
 
 export default function Rental() {
 	// Retrieving the 'idRental' parameter from the URL

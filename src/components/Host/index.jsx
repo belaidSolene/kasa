@@ -7,7 +7,7 @@
 import propType from 'prop-types'
 
 // Importing the stylesheet for styling
-import style from './host.module.css'
+import style from './host.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the Host component.

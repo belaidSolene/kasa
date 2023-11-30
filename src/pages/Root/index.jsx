@@ -10,7 +10,7 @@ import { Outlet } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-import style from './root.module.css'
+import style from './root.module.scss'
 
 export default function Root() {
 	// JSX structure defining the layout with Header, Outlet, and Footer components
@@ -18,7 +18,9 @@ export default function Root() {
 		<div id={style.container}>
 			<Header />
 
-			<Outlet />
+			<main>
+				<Outlet />
+			</main>
 
 			<Footer />
 		</div>

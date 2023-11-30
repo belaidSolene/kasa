@@ -7,7 +7,7 @@
 import PropTypes from 'prop-types'
 
 // Importing the stylesheet for styling
-import style from './banner.module.css'
+import style from './banner.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the Banner component.

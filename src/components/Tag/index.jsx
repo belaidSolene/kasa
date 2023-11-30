@@ -7,7 +7,7 @@
 import propType from 'prop-types'
 
 // Importing the stylesheet for styling
-import style from './tag.module.css'
+import style from './tag.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the Tag component.

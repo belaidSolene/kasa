@@ -12,7 +12,7 @@ import propType from 'prop-types'
 import { ReactComponent as Arrow } from '../../assets/arrow/arrowCollapse.svg'
 
 // Importing the stylesheet for styling
-import style from './collapse.module.css'
+import style from './collapse.module.scss'
 
 // Importing utility function to capitalize a string
 export function capitalizeString(str) {

@@ -7,7 +7,7 @@
 import { ReactComponent as Logo } from '../../assets/logo/logo-footer.svg'
 
 // Importing the stylesheet for styling
-import styles from './footer.module.css'
+import styles from './footer.module.scss'
 
 export default function Footer() {
 	// JSX structure defining the Footer component layout

@@ -12,7 +12,7 @@ import { ReactComponent as ArrowPrev } from '../../assets/arrow/arrowCarouselPre
 import { ReactComponent as ArrowNext } from '../../assets/arrow/arrowCarouselNext.svg'
 
 // Importing the stylesheet for styling
-import style from './carousel.module.css'
+import style from './carousel.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the Carousel component.

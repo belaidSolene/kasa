@@ -7,7 +7,7 @@
 import { Link } from 'react-router-dom'
 
 // Importing the stylesheet for styling
-import style from './error.module.css'
+import style from './error.module.scss'
 
 export default function ErrorPage() {
 	// JSX structure defining the ErrorPage component layout

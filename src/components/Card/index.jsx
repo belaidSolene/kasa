@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import propType from 'prop-types'
 
 // Importing the stylesheet for styling
-import style from './card.module.css'
+import style from './card.module.scss'
 
 /**
  * @param {Object} props - The properties passed to the Card component.

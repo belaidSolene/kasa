@@ -10,7 +10,7 @@ import { Link, NavLink } from 'react-router-dom'
 import logo from '../../assets/logo/logo-header.svg'
 
 // Importing the stylesheet for styling
-import style from './header.module.css'
+import style from './header.module.scss'
 
 export default function Header() {
 	// JSX structure defining the Header component layout

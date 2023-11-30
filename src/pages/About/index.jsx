@@ -13,7 +13,7 @@ import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 
 // Importing the stylesheet for styling
-import style from './about.module.css'
+import style from './about.module.scss'
 
 function About() {
 	// JSX structure defining the About component layout

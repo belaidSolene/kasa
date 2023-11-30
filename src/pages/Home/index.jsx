@@ -14,7 +14,7 @@ import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 
 // Importing the stylesheet for styling
-import style from './home.module.css'
+import style from './home.module.scss'
 
 export default function Home() {
 	const bannerTitle = 'Chez vous, partout et ailleurs'
