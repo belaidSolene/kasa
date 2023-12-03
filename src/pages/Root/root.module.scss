@@ -7,10 +7,6 @@ body{
     font-size: 18px;
 }
 
-main{
-    flex: 1;
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
@@ -51,9 +47,9 @@ h2 {
     min-height: 100vh
 }
 
-section{
+main{
     margin : 2.60rem 4rem 3.12rem;
-   // height: 1000px;
+    flex: 1;
 }
 
 @media screen and (max-width: 992px) {
@@ -63,13 +59,15 @@ section{
         align-items: center;
     }
 
-    section {
+    main {
         margin : 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    section {
+    main {
         margin : 1rem;
+        width: 90%;
     }
 }
