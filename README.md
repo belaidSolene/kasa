@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Kasa - Prototype Apartment Rental Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About This Project
 
-## Available Scripts
+This project is part of the OpenClassrooms program _'Développeur d'application JavaScript React'_ . The goal is to develop a modern web platform for **Kasa**, a fictional company that specializes in apartment rentals between individuals. The project involves creating a fully responsive web application using **React** and implementing specific features based on the provided **Figma** designs.
 
-In the project directory, you can run:
+The prototype includes a home page, a profile page for each apartment. It was developed to meet Kasa’s new design and featuring dynamic data display using JSON files.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Key Features](#key-features)
+- [Technical Stack](#technical-stack)
+- [Design and Mockups](#design-and-mockups)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Challenges and Learnings](#challenges-and-learnings)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
 
-### `npm test`
+The application includes the following core features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Homepage**: Displays available apartment listings, following a responsive layout for both desktop and mobile devices.
+1. **Apartment Details Page**: Provides detailed information about each apartment, including descriptions, location, amenities, and a photo gallery.
+1. **Interactive Photo Gallery**: Allows users to scroll through apartment photos. Special functionalities include:
 
-### `npm run build`
+- When at the first image, clicking “Previous” will display the last image.
+- When at the last image, clicking “Next” will display the first image.
+- If there's only one image, navigation buttons and numbering won’t appear.
+- The gallery height remains consistent as per the Figma designs, with images centered and cropped to fit.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Dropdowns (Collapse)**: Information panels that can be opened and closed by the user. By default, they are closed when the page loads.
+1. **Routing**: Includes navigation between pages using **React Router**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technical Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** for building the front-end application.
+- **React Router** for handling navigation and routes.
+- **Figma** for UI/UX design references.
+- **JavaScript** for functionality.
+- **CSS** for styling and ensuring a responsive layout.
+- **Create React App** for bundling (depending on developer preference).
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project follows a modular structure, with React components organized to ensure maintainability and scalability. Key components include:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Header**: Main navigation for the application.
+- **Gallery**: Component for managing image galleries with responsive and interactive features.
+- **Collapse**: Component for toggleable information panels.
+- **Apartment Listings**: Component for displaying the list of available apartments.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project follows a modular structure, with React components organized to ensure maintainability and scalability. Key components include:
 
-## Learn More
+- **Header**: Main navigation for the application.
+- **Gallery**: Component for managing image galleries with responsive and interactive features.
+- **Collapse**: Component for toggleable information panels.
+- **Apartment Listings**: Component for displaying the list of available apartments.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the project locally:
 
-### Code Splitting
+1. Clone this repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/belaidSolene/kasa.git
+```
 
-### Analyzing the Bundle Size
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd kasa
+```
 
-### Making a Progressive Web App
+3. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+5. Open http://localhost:3000 to view the project in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Design and Mockups
 
-### `npm run build` fails to minify
+The design for this project was provided through **Figma**, including the UI components, logos, icons, and layouts. The design follows a component-based logic, making it easier to integrate with React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Challenges and Learnings
+
+This project required managing complex user interactions, particularly with the photo gallery and collapsible components, while maintaining a consistent and responsive design. By leveraging **React**’s component-based architecture, the project was able to meet the high demands for flexibility and reusability.
